@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<!-- saved from url=(0014)about:internet -->
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+
+<title>gridgame</title>
+
+<style type="text/css">
+body, td {
+   font-family: sans-serif;
+   background-color: white;
+   font-size: 12px;
+   margin: 8px;
+}
+
+tt, code, pre {
+   font-family: 'DejaVu Sans Mono', 'Droid Sans Mono', 'Lucida Console', Consolas, Monaco, monospace;
+}
+
+h1 { 
+   font-size:2.2em; 
+}
+
+h2 { 
+   font-size:1.8em; 
+}
+
+h3 { 
+   font-size:1.4em; 
+}
+
+h4 { 
+   font-size:1.0em; 
+}
+
+h5 { 
+   font-size:0.9em; 
+}
+
+h6 { 
+   font-size:0.8em; 
+}
+
+a:visited {
+   color: rgb(50%, 0%, 50%);
+}
+
+pre {	
+   margin-top: 0;
+   max-width: 95%;
+   border: 1px solid #ccc;
+   white-space: pre-wrap;
+}
+
+pre code {
+   display: block; padding: 0.5em;
+}
+
+code.r, code.cpp {
+   background-color: #F8F8F8;
+}
+
+table, td, th {
+  border: none;
+}
+
+blockquote {
+   color:#666666;
+   margin:0;
+   padding-left: 1em;
+   border-left: 0.5em #EEE solid;
+}
+
+hr {
+   height: 0px;
+   border-bottom: none;
+   border-top-width: thin;
+   border-top-style: dotted;
+   border-top-color: #999999;
+}
+
+@media print {
+   * { 
+      background: transparent !important; 
+      color: black !important; 
+      filter:none !important; 
+      -ms-filter: none !important; 
+   }
+
+   body { 
+      font-size:12pt; 
+      max-width:100%; 
+   }
+       
+   a, a:visited { 
+      text-decoration: underline; 
+   }
+
+   hr { 
+      visibility: hidden;
+      page-break-before: always;
+   }
+
+   pre, blockquote { 
+      padding-right: 1em; 
+      page-break-inside: avoid; 
+   }
+
+   tr, img { 
+      page-break-inside: avoid; 
+   }
+
+   img { 
+      max-width: 100% !important; 
+   }
+
+   @page :left { 
+      margin: 15mm 20mm 15mm 10mm; 
+   }
+     
+   @page :right { 
+      margin: 15mm 10mm 15mm 20mm; 
+   }
+
+   p, h2, h3 { 
+      orphans: 3; widows: 3; 
+   }
+
+   h2, h3 { 
+      page-break-after: avoid; 
+   }
+}
+
+</style>
+
+
+
+
+
+</head>
+
+<body>
+<h1>gridgame</h1>
+
+<p>The R package <strong>gridgamer</strong> This package provides a general-purpose game framework for grid game in R. The package includes 2 games about snake and 2048. You can run the function snake() or g2048() to startup the game. These games are only running on <strong>Window</strong> platform.</p>
+
+<p><a href="http://onbook.me/#/project/gridgame">homepage</a> for details and examples. See
+<a href="https://github.com/bsspirit/gridgame/wiki">FAQ&#39;s</a> for a list of
+frequently asked questions (including where to ask questions).</p>
+
+<h2>Installation</h2>
+
+<p>You can install the stable version on <a href="http://cran.r-project.org/package=gridgame">CRAN</a>:</p>
+
+<pre><code class="s">install.packages(&#39;gridgame&#39;)
+</code></pre>
+
+<p>Another way, You can also install from <a href="http://rforge.net/gridgame/">RForge</a>, which provides daily build of <strong>gridgame</strong>:</p>
+
+<pre><code class="s"># update all existing packages first
+update.packages(ask = FALSE, repos = &#39;http://cran.rstudio.org&#39;)
+install.packages(&#39;gridgame&#39;, repos = c(&#39;http://rforge.net&#39;, &#39;http://cran.rstudio.org&#39;),type = &#39;source&#39;)
+</code></pre>
+
+<p>You can also install the development version from <a href="https://github.com/bsspirit/gridgame">Github</a>, which provides daily build of <strong>gridgame</strong>:</p>
+
+<pre><code class="s">library(devtools)
+install_github(&quot;gridgame&quot;,&quot;bsspirit&quot;)
+</code></pre>
+
+<p>If you know GIT and <code>R CMD build</code>, it is handly way:</p>
+
+<pre><code class="bash">git clone https://github.com/bsspirit/gridgame.git
+R CMD BUILD gridgame
+R CMD INSTALL gridgame_*.tar.gz
+</code></pre>
+
+<h2>Usage</h2>
+
+<pre><code class="s">library(gridgame)
+
+# start snake game.
+snake()
+
+# start 2048 game. 
+g2048()
+</code></pre>
+
+<h2>Document</h2>
+
+<ul>
+<li>R语言游戏之旅 贪食蛇入门 <a href="http://blog.fens.me/r-game-snake/">http://blog.fens.me/r-game-snake/</a></li>
+<li>R语言游戏框架设计 <a href="http://blog.fens.me/r-game-framework/">http://blog.fens.me/r-game-framework/</a></li>
+<li>R语言游戏之旅 游戏2048 <a href="http://blog.fens.me/r-game-2048/">http://blog.fens.me/r-game-2048/</a></li>
+<li>发布gridgame游戏包 <a href="http://blog.fens.me/r-game-gridgame/">http://blog.fens.me/r-game-gridgame/</a></li>
+</ul>
+
+<h2>License</h2>
+
+<p>This package is free and open source software, licensed under GPL-3.</p>
+
+</body>
+
+</html>
+
